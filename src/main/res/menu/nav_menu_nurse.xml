@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_reaction"
+        android:title="Add reaction for  the patient"/>
+    <item
+        android:id="@+id/nav_personal_reaction"
+        android:title="add personal reaction"/>
+    <item
+        android:id="@+id/nav_reactionList"
+        android:title="View all reactions"/>
+    <item
+        android:id="@+id/nav_information"
+        android:title="information"/>
+</menu>

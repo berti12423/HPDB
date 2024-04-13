@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="description_array">
+        <item>ללא תיאור</item>
+        <item>לפני הירידה לניתוח</item>
+        <item>בעת ההגעה למחלקה חזרה מהתאוששות</item>
+        <item>בערב אחרי הניתוח לפני ההליכה לישון</item>
+        <item>בלילה אחרי הניתוח – אם מתעורר</item>
+        <item>בבוקר POD1 אחרי הקימה</item>
+        <item>ערב POD1</item>
+        <item>לילה  אם מתעורר </item>
+        <item>בוקר POD2</item>
+        <item>צהריים POD2</item>
+        <item>ערב POD2</item>
+        <item>לילה POD2</item>
+        <item>בוקר POD3</item>
+
+    </string-array>
+    <string-array name="new_spinner_options">
+        <item>chose description</item>
+        <item>בעת ההגעה למחלקה חזרה מהתאוששות</item>
+    </string-array>
+
+</resources>

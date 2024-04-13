@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#292929"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:hint="קוד משתמש"
+        android:maxLength="4"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#DD3C3C"
+        android:text="התחברות" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/usernameError"
+        android:layout_height="wrap_content"
+        android:text="Username must contain 4 digits"
+        android:textColor="#E10A0A"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/usernameLastNumberError"
+        android:layout_height="wrap_content"
+        android:text="last digit must be between 1-4"
+        android:textColor="#E10A0A"
+        android:visibility="invisible"
+        />
+</LinearLayout>

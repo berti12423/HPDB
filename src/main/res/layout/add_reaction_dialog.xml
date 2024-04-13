@@ -1,0 +1,60 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#313131"
+    android:padding="16dp">
+
+    <!-- Date EditText -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog"
+        android:inputType="none"
+        android:minHeight="48dp" />
+
+    <!-- Time EditText -->
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDate"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Select Time"
+        android:focusable="false"
+        android:onClick="showTimePickerDialog"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Additional EditText -->
+    <Spinner
+        android:id="@+id/descriptionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTime"
+        android:textColor="@color/white"
+        android:hint="Select Description"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/description_array"
+        android:dropDownItemStyle="@style/SpinnerDropDownItem" />
+
+    <!-- Button to send -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionSpinner"
+        android:layout_marginTop="16dp"
+        android:text="Send"
+        android:backgroundTint="#DD3C3C"
+        android:id="@+id/btnSend"
+        android:onClick="sendDateTime" />
+
+</RelativeLayout>
